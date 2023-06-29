@@ -1,0 +1,17 @@
+{
+  "name": "com.popp",
+  "version": "3.0.0",
+  "description": "Popp",
+  "main": "app.js",
+  "dependencies": {
+    "homey-log": "^1.0.1",
+    "homey-zigbeedriver": "^1.6.12",
+    "homey-zwavedriver": "^2.1.10",
+    "zigbee-clusters": "^1.5.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

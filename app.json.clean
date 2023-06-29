@@ -1,0 +1,143 @@
+{
+  "id": "com.popp",
+  "sdk": 2,
+  "name": {
+    "en": "PoPP EU Z-Wave Products",
+    "nl": "PoPP EU Z-Wave Producten"
+  },
+  "description": {
+    "en": "PoPP EU Z-Wave products support for Homey @ Athom",
+    "nl": "PoPP EU Z-Wave product ondersteuning voor Homey @ Athom"
+  },
+  "images": {
+    "large": "/assets/images/large.jpg",
+    "small": "/assets/images/small.jpg"
+  },
+  "version": "2.0.0",
+  "compatibility": ">=1.5.3",
+  "tags": {
+    "en": [
+      "scene controller",
+      "remote",
+      "remote control",
+      "central scene",
+      "scenes",
+      "motion detection",
+      "motion",
+      "alarm",
+      "door",
+      "window",
+      "sensor",
+      "switch",
+      "smart plug",
+      "USB",
+      "Weather",
+      "Rain",
+      "Wind",
+      "Valve"
+    ],
+    "nl": [
+      "scene controller",
+      "afstandsbediening",
+      "central scene",
+      "scenes",
+      "bewegingsdetectie",
+      "beweging",
+      "alarm",
+      "deur",
+      "raam",
+      "sensor",
+      "schakelaar",
+      "USB",
+      "Weer",
+      "Regen",
+      "Wind",
+      "Ventiel"
+    ]
+  },
+  "category": [
+    "appliances",
+    "lights",
+    "security",
+    "climate"
+  ],
+  "author": {
+    "name": "Marco Ruiter",
+    "email": "mruiter@tuxweb.nl"
+  },
+  "contributors": {
+    "developers": [
+      {
+        "name": "Marco Ruiter",
+        "email": "mruiter@tuxweb.nl"
+      }
+    ]
+  },
+  "contributing": {
+    "donate": {
+      "paypal": {
+        "username": "MarcoRuiter",
+        "currency": "EUR"
+      }
+    }
+  },
+  "capabilities": {
+    "alarm_siren": {
+      "type": "boolean",
+      "title": {
+        "en": "Siren",
+        "nl": "Sirene"
+      },
+      "units": {
+        "en": "Status"
+      },
+      "desc": {
+        "en": "Alarm",
+        "nl": "Alarm"
+      },
+      "getable": true,
+      "setable": false
+    },
+    "measure_dewpoint": {
+      "type": "number",
+      "title": {
+        "en": "DewPoint",
+        "nl": "Dauwpunt"
+      },
+      "units": {
+        "en": "C"
+      },
+      "desc": {
+        "en": "Celius (C)",
+        "nl": "Celius (C)"
+      },
+      "chartType": "stepLine",
+      "decimals": 1,
+      "getable": true,
+      "setable": false
+    },
+    "alarm_rain": {
+      "type": "number",
+      "title": {
+        "en": "Rain Alarm",
+        "nl": "Regen Alarm"
+      },
+      "units": {
+        "en": "rain_status"
+      },
+      "desc": {
+        "en": "Rain Alarm",
+        "nl": "Regen Alarm"
+      },
+      "min": 0,
+      "max": 3,
+      "step": 1,
+      "getable": true,
+      "setable": false
+    }
+  },
+  "drivers": [
+  ],
+  "flow": {
+  }
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg enable-background="new 0 0 32 32" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+
+<g transform="rotate(90 16 16.03)">
+	
+	<path d="m22.768 25.003-15.647-13.462" fill="none" stroke="#000" stroke-miterlimit="10"/>
+	<g fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5">
+		<polyline points="27.957 7.751 27.957 0.95 4.043 0.95 4.043 7.751"/>
+		<polyline points="4.043 15.369 4.043 31.111 27.957 31.111 27.957 15.369"/>
+		<polyline points="25.09 6.376 25.09 3.305 6.91 3.305 6.91 6.376"/>
+	<polygon points="26.09 7.068 5.91 7.068 4.864 7.751 2.864 7.751 6.147 28.756 16 28.756 25.853 28.756 29.136 7.751 27.136 7.751"/></g>
+	<path d="m16 9.751h10.799l-1.456 9.316-0.8 5.114-0.402 2.575h-16.283l-2.657-17.005h8.0992" fill="none" stroke="#000" stroke-miterlimit="10"/>
+	<g transform="rotate(-90 17.351 20.182)"><circle cx="27.792" cy="18.893" r="1.112"/><path d="m27.782 18.831h-3.778" fill="none" stroke="#000" stroke-miterlimit="10"/></g>
+</g>
+</svg>
