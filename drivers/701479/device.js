@@ -1,10 +1,10 @@
 'use strict';
 
-
+const Homey = require('homey');
 const { ZwaveDevice } = require('homey-zwavedriver');
 
 class P701479 extends ZwaveDevice {
-	onMeshInit() {
+	onNodeInit() {
 		this.registerCapability('onoff', 'SWITCH_BINARY');
 	}
 }

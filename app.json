@@ -18,7 +18,7 @@
     "large": "/assets/images/large.jpg",
     "small": "/assets/images/small.jpg"
   },
-  "version": "3.2.8",
+  "version": "3.2.9",
   "compatibility": ">=7.4.1",
   "brandColor": "#AAAAAA",
   "tags": {
@@ -103,8 +103,8 @@
     "triggers": [
       {
         "title": {
-          "en": "Window closed",
-          "de": "Fenster wurde geschlossen"
+          "en": "Valve control was activated",
+          "de": "Ventilsteuerung wurde aktiviert"
         },
         "args": [
           {
@@ -117,8 +117,8 @@
       },
       {
         "title": {
-          "en": "Window opened",
-          "de": "Fenster wurde geöffnet"
+          "en": "Valve control was deactivated",
+          "de": "Ventilsteuerung wurde deaktiviert"
         },
         "args": [
           {
@@ -1276,8 +1276,8 @@
     "conditions": [
       {
         "title": {
-          "en": "The window is !{{open|closed}}",
-          "de": "Das Fenster ist !{{offen|geschlossen}}"
+          "en": "Valve control is !{{activated|deactivated}}",
+          "de": "Die Ventilsteuerung ist !{{aktiviert|deaktiviert}}"
         },
         "args": [
           {
@@ -1422,8 +1422,8 @@
     "actions": [
       {
         "title": {
-          "en": "Disable external window open trigger",
-          "de": "Deaktiviere externen Fenster-Auf-Trigger"
+          "en": "Activate valve control",
+          "de": "Ventilsteuerung aktivieren"
         },
         "args": [
           {
@@ -1436,8 +1436,8 @@
       },
       {
         "title": {
-          "en": "Enable external window open trigger",
-          "de": "Aktiviere externen Fenster-Auf-Trigger"
+          "en": "Deactivate valve control",
+          "de": "Ventilsteuerung deaktivieren"
         },
         "args": [
           {
@@ -7178,10 +7178,10 @@
           ]
         },
         {
-          "id": "25",
+          "id": "30",
           "value": "0",
           "zwave": {
-            "index": 25,
+            "index": 30,
             "size": 1
           },
           "label": {
@@ -8363,12 +8363,12 @@
               "id": "windowOpenEnabled",
               "type": "checkbox",
               "label": {
-                "en": "Window open feature enabled",
-                "de": "Fenster offen Funktion"
+                "en": "Valve control",
+                "de": "Ventilsteuerung"
               },
               "hint": {
-                "en": "This function allows you to use an external window sensor, with the help of flows, to close the thermostat while the window is open.",
-                "de": "Diese Funktion ermöglicht Ihnen einen externen Fenstersensor, mit hilfe von Flows, das Thermostat zu schliessen, wärend das Fenster geöffnet ist."
+                "en": "This function allows you to activate or deactivate the valve control by means of an external trigger, using flows.",
+                "de": "Diese Funktion ermöglicht Ihnen durch einen externen Auslöser, mit hilfe von Flows, die Ventilsteuerung zu aktivieren oder zu deaktivieren."
               },
               "value": true
             },
@@ -8499,22 +8499,22 @@
     "alarm_window_open": {
       "type": "boolean",
       "title": {
-        "en": "Window open",
-        "de": "Fenster offen"
+        "en": "Valve control deactivated",
+        "de": "Ventilsteuerung deaktiviert"
       },
       "getable": true,
       "setable": false,
       "uiComponent": "sensor",
       "insights": true,
       "insightsTitleTrue": {
-        "en": "Window Alarm is activated",
-        "de": "Fenster Alarm wurde ausgelöst"
+        "en": "Valve control was deactivated",
+        "de": "Ventilsteuerung wurde deaktiviert"
       },
       "insightsTitleFalse": {
-        "en": "Window Alarm is deactivated",
-        "de": "Fenster Alarm wurde zurückgesetzt"
+        "en": "Valve control was activated",
+        "de": "Ventilsteuerung wurde aktiviert"
       },
-      "icon": "/assets/window_open.svg"
+      "icon": "/assets/valve.svg"
     },
     "info_tilt": {
       "type": "boolean",
@@ -8651,22 +8651,21 @@
     "window_open_trigger": {
       "type": "boolean",
       "title": {
-        "en": "Window open (external trigger)",
-        "de": "Fenster offen (externer Auslöser)"
+        "en": "Close valve",
+        "de": "Ventil schliessen"
       },
       "getable": true,
       "setable": true,
       "insights": true,
       "insightsTitleTrue": {
-        "en": "Window (external) was opened",
-        "de": "Fenster (extern) wurde geöffnet"
+        "en": "Valve control was deactivated",
+        "de": "Ventilsteuerung wurde deaktiviert"
       },
       "insightsTitleFalse": {
-        "en": "Window (external) was closed",
-        "de": "Fenster (extern) wurde geschlossen"
+        "en": "Valve control was activated",
+        "de": "Ventilsteuerung wurde aktiviert"
       },
-      "uiComponent": "toggle",
-      "icon": "/assets/window_open.svg"
+      "uiComponent": "toggle"
     }
   }
 }
